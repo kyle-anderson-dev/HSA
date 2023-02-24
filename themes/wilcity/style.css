@@ -1,0 +1,120 @@
+/*
+ * Theme Name: WilCity
+ * Theme URI: https://wilcity.com
+ * Author: wiloke
+ * Author URI: https://wiloke.com
+ * Description: Listing WordPress Theme
+ * Version: 1.4.18
+ * Text Domain: wilcity
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+ */
+
+@media(min-width: 1201px) {
+    .container-fullwidth .container {
+        max-width: 1760px !important;
+    }
+}
+
+.wil-header-btn-wrapper{
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.wil-verified::after{
+  content: "\f00c" !important;
+  font: normal normal normal 16px/1 "FontAwesome" !important;
+}
+
+
+/* LISTING CARD */
+.listing_module__2EnGq {
+  border: 1px solid #f5f5f7;
+}
+.listing_module__2EnGq:after {
+  display: none;
+}
+
+/* HEADER LIGHT BORDER BOTTOM */
+.header_module__Snpib[data-header-changetheme=light]:after, .header_module__Snpib[data-header-theme=light]:after {
+  background-color: #f3f3f6;
+}
+
+/* NEW SEARCH */
+.wil-hero-search-style2 .hero_form__1ewus {
+  padding: 16px 20px 20px;
+  border-radius: 10px;
+  border: 1px solid #f3f3f6;
+  box-shadow: 0 5px 18px 0 rgba(37,44,65,0.1);
+}
+
+.wil-hero-search-style2 .wil-tab__panel .wil-btn {
+  width: 100%;
+}
+
+.wil-hero-search-style2 .field_module__1H6kT {
+  margin-bottom: 0 !important;
+}
+
+.wil-hero-search-style2 .tab_nav__3YJph li a.active,
+.wil-hero-search-style2 .tab_nav__3YJph li a:focus.active,
+.wil-hero-search-style2 .tab_nav__3YJph li a:hover.active {
+  background: none;
+}
+
+.wil-hero-search-style2 .tab_nav__3YJph a {
+  position: relative;
+  color: #252c41;
+  font-size: 15px;
+  padding: 0 30px 12px 0;
+}
+
+.wil-hero-search-style2 .tab_nav__3YJph a:after {
+  content: '';
+  display: block;
+  margin-top: 4px;
+  height: 2px;
+}
+
+.wil-hero-search-style2 .tab_nav__3YJph li a.active:after,
+.wil-hero-search-style2 .tab_nav__3YJph li a:focus.active:after,
+.wil-hero-search-style2 .tab_nav__3YJph li a:hover.active:after {
+  background-color: #252c41;
+}
+.wil-hero-search-style2 .vue-treeselect div, .wil-hero-search-style2 .vue-treeselect span {
+  color: #70778b;
+  font-size: 14px;
+}
+.wil-hero-search-style2 .vue-treeselect__indent-level-0 .vue-treeselect__option {
+  padding: 10px;
+}
+.wil-hero-search-style2 .vue-treeselect__label {
+  padding-left: 0 !important;
+}
+.wil-hero-search-style2 .vue-treeselect i {
+  font-size: 18px;
+}
+
+.wil-hero-search-style2 .vue-treeselect .la-coffee {
+  transform: translate(-3px, 4px);
+}
+@media (min-width: 992px) {
+  .wil-hero-search-style2 .wil-hsf-wrapper {
+    display: flex;
+  }
+  .wil-hero-search-style2 .wil-hsf-fields-wrapper {
+    width: calc(100% - 180px);
+    padding-right: 30px;
+  }
+  .wil-hero-search-style2 .wil-btn-wrapper {
+    width: 180px;
+  }
+}
+
+@media (max-width: 991px) {
+  .wil-hero-search-style2 .field_module__1H6kT {
+    margin-bottom: 10px !important;
+  }
+}
