@@ -1150,7 +1150,7 @@ return [
             'type'                => 'new_listing_content',
             'key'                 => 'listing_content',
             'icon'                => 'la la-file-text',
-            'heading'             => 'Listing Content (WYSIWYG)',
+            'heading'             => 'Listing Content',
             'fieldGroups'         => [
                 [
                     'heading' => 'Listing Content',

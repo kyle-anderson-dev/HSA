@@ -1163,7 +1163,7 @@ class SearchFormController extends Controller
 		}
 
 		$aError = [
-			'msg' => esc_html__('Sorry, We found no posts matched what are you looking for ...', 'wiloke-listing-tools')
+			'msg' => esc_html__('Sorry we cannot find any Home Staging company in your area, please contact us for further assistance', 'wiloke-listing-tools')
 		];
 
 		if (!$this->isPassedDateRange($aArgs)) {
@@ -1254,7 +1254,7 @@ class SearchFormController extends Controller
 		}
 
 		$aError = [
-			'msg' => esc_html__('Sorry, We found no posts matched what are you looking for ...', 'wiloke-listing-tools')
+			'msg' => esc_html__('Sorry we cannot find any Home Staging company in your area, please contact us for further assistance', 'wiloke-listing-tools')
 		];
 
 		if (!$this->isPassedDateRange($aArgs)) {

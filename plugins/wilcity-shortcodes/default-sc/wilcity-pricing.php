@@ -157,7 +157,7 @@ function wilcityPricing($aAtts)
                                        rel="nofollow"
                                        href="<?php echo esc_url(apply_filters('wilcity/submission/pricingUrl',
 										   $query->post->ID, $postID, $aAtts)); ?>">
-                                        <i class="la la-check"></i> <?php esc_html_e('Get Now',
+                                        <i class="la la-check"></i> <?php esc_html_e('Join Now',
 											'wilcity-shortcodes'); ?>
                                     </a>
 								<?php else: ?>
@@ -166,7 +166,7 @@ function wilcityPricing($aAtts)
 										   $query->post->ID, $postID, $aAtts)); ?>">
                                         <i class="la la-check"></i>
 										<?php echo $remainingItems > 1 ? esc_html__('Continue', 'wilcity-shortcodes')
-											: esc_html__('Get Now', 'wilcity-shortcodes'); ?>
+											: esc_html__('Join Now', 'wilcity-shortcodes'); ?>
                                     </a>
 								<?php endif; ?>
 

@@ -74,7 +74,7 @@ wp_reset_postdata();
                                 <wil-auto-complete @change="handleAutoCompleteChange"
                                                    v-on:keyword-change="handleUpdateKeyword"
                                                    :search-target='<?php echo json_encode($aSearchTarget); ?>'
-                                                   placeholder="<?php esc_html_e('Search for address, title, location ...',
+                                                   placeholder="<?php esc_html_e('Search by listing title only otherwise use tabs below',
                                                        'wilcity'); ?>"
                                                    default-search="<?php echo esc_attr($defaultSearch); ?>"
                                                    module="complex"
@@ -93,11 +93,12 @@ wp_reset_postdata();
             </div>
         </div>
         <section class="wil-section bg-color-gray-2 pt-0">
-            <div class="listing-bar_module__2BCsi js-listing-bar-sticky">
+		<!-- Add js-listing-bar-sticky to make listing bar sticky -->
+            <div class="listing-bar_module__2BCsi">
                 <div class="container">
                     <div class="listing-bar_resuilt__R8pwY">
-                        <?php esc_html_e('We found', 'wilcity'); ?>
-                        <span class="color-primary" v-text="totalListingText"></span>
+                        <?php //esc_html_e('We found', 'wilcity'); ?>
+<!--                         <span class="color-primary" v-text="totalListingText"></span> -->
                         <a @click.prevent="reset" class="wil-btn wil-btn--border wil-btn--round wil-btn--xs" href="#">
                             <i class="color-primary la la-share"></i>
                             <?php esc_html_e('Reset', 'wilcity'); ?>
@@ -110,6 +111,13 @@ wp_reset_postdata();
                     <?php do_action('wilcity/templates/search-v2/after-post-type-nav-bar'); ?>
                 </div>
             </div>
+			<div :class="searchFieldWrapper">
+                <div class="container">
+					<p style="margin: 0;">
+						Please use the below filters to search by location, categories etc...
+					</p>
+				</div>
+			</div>
             <div :class="searchFieldWrapper" style="min-height: 59px;">
                 <div class="container">
                     <wil-search-form-v2 v-if="!isMobile" :search-fields="searchFields" :cache-timestamp="cacheTimestamp"

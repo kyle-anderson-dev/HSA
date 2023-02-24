@@ -811,7 +811,7 @@ return [
     'updateReview'                           => esc_html__('Update review', 'wilcity'),
     'always_open'                            => esc_html__('Open 24/7', 'wilcity'),
     'open247'                                => esc_html__('Open 24/7', 'wilcity'),
-    'whatAreULookingFor'                     => esc_html__('What are you looking for?', 'wilcity'),
+    'whatAreULookingFor'                     => esc_html__('Find a home staging pro', 'wilcity'),
     'notFound'                               => esc_html__('Not Found', 'wilcity'),
     'viewProfile'                            => esc_html__('View Profile', 'wilcity'),
     'becomeAnAuthor'                         => esc_html__('Become an author', 'wilcity'),

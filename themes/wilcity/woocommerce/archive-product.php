@@ -44,6 +44,19 @@ do_action( 'woocommerce_before_main_content' );
 
 
 ?>
+	<div class="shop-header">
+		<div class="shop-header-inner">
+			<div class="content">
+				<h1>
+					Home Staging Store 
+				</h1>
+				<p>
+					Welcome to the Home Staging Store:<br/>
+					your go-to place for all the staging resources for your business.
+				</p>
+			</div>
+		</div>	
+	</div>
     <div class="row">
         <div class="col-md-12">
         	<header class="woocommerce-products-header">

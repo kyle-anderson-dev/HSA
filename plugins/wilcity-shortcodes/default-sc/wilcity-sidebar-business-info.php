@@ -152,7 +152,7 @@ function wicitySidebarBusinessInfo($aArgs)
                             break;
                         case 'inbox':
                             if (SingleListing::isClaimedListing($post->ID)): ?>
-                                <wil-message-btn btn-name="<?php esc_html_e('Inbox', 'wilcity-shortcodes'); ?>"
+                                <wil-message-btn btn-name="<?php esc_html_e('Send a message', 'wilcity-shortcodes'); ?>"
                                                  wrapper-classes="wilcity-inbox-btn wil-btn wil-btn--block mt-20
                                                  wil-btn--border wil-btn--round wil-listing-inbox"
                                                  :receiver-id="<?php echo abs($post->post_author); ?>"
